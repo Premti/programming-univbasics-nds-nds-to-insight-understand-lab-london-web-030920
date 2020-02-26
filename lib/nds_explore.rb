@@ -9,7 +9,7 @@ end
 
 def print_first_directors_movie_titles
   element_index = 0 
-  while element_index < directors_database do 
+  while element_index < directors_database[0][:movies][element_index] do 
     pp directors_database[0][:movies][element_index][:title]
    element_index += 1
   end 
